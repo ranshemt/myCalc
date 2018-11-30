@@ -44,7 +44,7 @@ function calculate(str){
             printFullDebugResponse(resp);
         }
     };
-    var root="/MyCalculator-Class/service_calculator/main.php";
+    var root="/MyCalculatorGit/service_calculator/main.php";
     ajaxRequest.open("POST", root + "?par=" + str, true);
     ajaxRequest.send(null);
     //
@@ -55,7 +55,7 @@ function calculate(str){
             document.getElementById("myDebug").innerHTML=this.responseText;
         }
     };
-    var root="/MyCalculator-Class/service_calculator/debug.php";
+    var root="/MyCalculatorGit/service_calculator/debug.php";
     ajaxRequest.open("GET", root + "?par=" + str, true);
     ajaxRequest.send(null);
 }
@@ -71,7 +71,7 @@ function restart(){
             document.getElementById("myDebug").innerHTML=this.responseText;
         }
     };
-    var root="/MyCalculator-Class/service_calculator/restart.php";
+    var root="/MyCalculatorGit/service_calculator/restart.php";
     ajaxRequest.open("PUT", root + "?par=Y", true);
     ajaxRequest.send(null); 
     document.getElementById("history").innerHTML="";
