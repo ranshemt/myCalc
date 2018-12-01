@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ran's Calculator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"
+        integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
+        integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        
+        <!--my includes-->
+        <link href="includes/css/style.css" rel="stylesheet">
+        <script src="includes/js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <div class="">
+                        <h1>Ran's Calculator!</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!-- <p id="initSession">
+                <input type="button" class="debug" value="click here to start session!" onclick='initSess()'>
+            </p> -->
+            <form id="CALC" class="container">
+                <div class="d-flex flex-column">
+                    <div>
+                        <h2 id="RES">Result</h2>
+                    </div>
+                    <div id="historyParent">
+                        <p id="history"></p>
+                    </div>
+                </div>
+                <!--1 2 3 +-->
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <input type="button" class="btn b1" value="1" onclick='calculate(this.value)'>
+                    <input type="button"  class="btn b2"  value="2" onclick='calculate(this.value)'>
+                    <input type="button" class="btn b3" value="3" onclick='calculate(this.value)'>
+                    <input type="button" class="btn bPl" value="+" onclick='calculate(this.value)'>
+                </div>
+                <!--4 5 6 - -->
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <input type="button" class="btn b4" value="4" onclick='calculate(this.value)'>
+                    <input type="button"  class="btn b5"  value="5" onclick='calculate(this.value)'>
+                    <input type="button" class="btn b6" value="6" onclick='calculate(this.value)'>
+                    <input type="button" class="btn bMi" value="-" onclick='calculate(this.value)'>
+                </div>
+                <!--7 8 9 * -->
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <input type="button" class="btn b7" value="7" onclick='calculate(this.value)'>
+                    <input type="button"  class="btn b8"  value="8" onclick='calculate(this.value)'>
+                    <input type="button" class="btn b9" value="9" onclick='calculate(this.value)'>
+                    <input type="button" class="btn bMu" value="*" onclick='calculate(this.value)'>
+                </div>
+                <!--0 C / -->
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <input type="button"  class="btn zero b0"  value="0" onclick='calculate(this.value)'>
+                    <input type="button" class="btn bC" value="C" onclick='restart()'>
+                    <input type="button" class="btn bDi" value="/" onclick='calculate(this.value)'>
+                </div>
+            </form>
+            <p id="myDebug">    </p>
+            <p id="myFullDebug">    </p>
+        </main>
+        
+
+        
+    </body>
+</html>

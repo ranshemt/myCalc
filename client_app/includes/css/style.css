@@ -1,0 +1,157 @@
+/*Google Fonts*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,400,400italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300italic,400,400italic,700,700italic);
+@import url(https://fonts.googleapis.com/css?family=Bad+Script:400);
+
+/*
+General
+*/
+a{
+    text-decoration: none !important;
+    color: inherit;
+}
+a:hover{
+    text-decoration: none !important;
+    color: inherit;
+}
+*{margin: 0; padding: 0; font-family: sans-serif;}
+footer, main, section, nav {
+	display: block;
+}
+ul{
+    list-style-type: none;
+}
+.my-flex-zero{
+    flex: 1 1 0;
+    
+}
+.remove{
+    display: none;
+}
+html{
+    height: 100vh !important;
+}
+body{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: normal;
+    color: #000000;
+    height: 100vh !important;
+}
+/*
+Header
+*/
+header{
+    background-color: #111111;
+    height: 10vh;
+}
+header h1{
+    color: #f4f4f4;
+    font-family: 'Roboto-Condensed', sans-serif ;
+    font-weight: bolder;
+    text-align: start;
+}
+/*
+Calculator
+*/
+main{
+    background-color: #ffffff;
+    height: 90vh;
+}
+#CALC{
+    background-color: #f4f4f4;
+    max-width: 750px;
+    padding: 0px;
+}
+/*
+Result
+*/
+#RES{
+    height: 20vh;
+    text-align: start;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
+    color: #000000;
+    font-size: 7vh;
+    padding: 0%;
+}
+#history{
+    height: 5vh;
+    padding: 0%;
+    font-size: 4.5vh;
+}
+#historyParent{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+#historyParent::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+#historyParent::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+#historyParent::-webkit-scrollbar-thumb
+{
+	background-color: #111111;	
+	background-image: -webkit-linear-gradient(45deg,
+	                                          rgba(255, 255, 255, .2) 25%,
+											  transparent 25%,
+											  transparent 50%,
+											  rgba(255, 255, 255, .2) 50%,
+											  rgba(255, 255, 255, .2) 75%,
+											  transparent 75%,
+											  transparent)
+}
+/*
+Buttons
+*/
+/* input[type=button]{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+} */
+.btn, .debug{
+    width: 25%;
+    height: 16.25vh;
+    background-color: #c09f80;
+    border-radius: 0%;
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 200;
+    color: #f4f4f4;
+    font-size: 5vw;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.zero{
+    width: 50%;
+}
+.b1{    background-color: #AC848B;  }
+.b2{    background-color: #9F6F77;  }
+.b3{    background-color: #915B64;  }
+.b4{    background-color: #834651;  }
+.b5{    background-color: #76323E;  }
+.b6{    background-color: #6A2D37;  }
+.b7{    background-color: #5E2831;  }
+.b8{    background-color: #52232B;  }
+.b9{    background-color: #461E25;  }
+.b0{    background-color: #3B191F;  }
+.bC{    background-color: #2F1418;  }
+.bPl{    background-color: #666666;  }
+.bMi{    background-color: #444444;  }
+.bMu{    background-color: #2B2B2B;  }
+.bDi{    background-color: #111111;  }
+/*
+*/
+.debug{
+    width: 90%;
+}
